@@ -23,6 +23,7 @@ function projectChanged(currentProject, fromHash, toHash) {
   const output = execSync(getAffected).toString();
   //get the list of changed projects from the output
   const changedProjects = JSON.parse(output).projects;
+  console.log(output);
   if (changedProjects.find((project) => project === currentProject)) {
     return true;
   } else {
