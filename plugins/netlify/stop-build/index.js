@@ -18,7 +18,7 @@ module.exports = {
 
 function projectChanged(currentProject, fromHash, toHash) {
   const execSync = require('child_process').execSync;
-  const getAffected = `yarn --silent nx print-affected --base=${fromHash} --head=${toHash}`;
+  const getAffected = `npm run --silent nx print-affected --base=${fromHash} --head=${toHash}`;
   console.log(fromHash, toHash);
   const output = execSync(getAffected).toString();
   console.log(output);
