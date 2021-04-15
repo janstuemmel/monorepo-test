@@ -22,7 +22,7 @@ export function App() {
             rel="noopener noreferrer"
           >
             {' '}
-            If you like Nx, please give it a star:
+            Hello
             <div className="github-star-badge">
               <img src={star} className="material-icons" alt="" />
               Star
