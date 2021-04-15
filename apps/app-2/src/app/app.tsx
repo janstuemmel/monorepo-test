@@ -1,4 +1,6 @@
 import styles from './app.module.css';
+import { SharedComponents } from '@farlock/shared-components';
+import { App2Helpers } from '@monorepo-test/app2-helpers';
 
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
