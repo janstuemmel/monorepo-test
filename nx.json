@@ -1,30 +1,28 @@
 {
   "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     ".eslintrc.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "monorepo-test",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "NmE2OTIzYzAtZGJkZC00YTRhLWFmZjgtYTdmYjgyOGEwODRifHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
   "projects": {
-    "app-1": {
-      "tags": []
-    },
-    "app-1-e2e": {
-      "tags": [],
-      "implicitDependencies": ["app-1"]
-    }
+    "app-1": { "tags": [] },
+    "app-1-e2e": { "tags": [], "implicitDependencies": ["app-1"] },
+    "app-2": { "tags": ["app-2"] },
+    "app-2-e2e": { "tags": [], "implicitDependencies": ["app-2"] },
+    "shared-components": { "tags": ["shared"] },
+    "app1-helpers": { "tags": ["app-1"] },
+    "app2-helpers": { "tags": ["app-2"] }
   }
 }

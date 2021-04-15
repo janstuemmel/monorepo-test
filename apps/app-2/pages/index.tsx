@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SharedComponents } from '@farlock/shared-components';
-import { app1helper } from '@monorepo-test/app1-helpers';
+import { App2Helpers } from '@monorepo-test/app2-helpers';
 
 const StyledPage = styled.div`
   .page {

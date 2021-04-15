@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@farlock/shared-components": ["libs/shared-components/src/index.ts"],
+      "@monorepo-test/app1-helpers": ["libs/app1-helpers/src/index.ts"],
+      "@monorepo-test/app2-helpers": ["libs/app2-helpers/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
