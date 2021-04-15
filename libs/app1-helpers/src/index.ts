@@ -1,1 +1,1 @@
-export const app1helper = 'bar';
+export const app1helper = ' Hello';
