@@ -12,6 +12,7 @@ export function App() {
       <header className="flex">
         <Logo width="75" height="75" />
         <h1>Welcome to app-1!</h1>
+        <p>{app1helper}</p>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
