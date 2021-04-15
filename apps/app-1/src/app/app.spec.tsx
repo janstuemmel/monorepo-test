@@ -22,6 +22,6 @@ describe('App', () => {
       </BrowserRouter>
     );
 
-    expect(getByText('Welcome to app-1!')).toBeTruthy();
+    expect(getByText('Welcome to 1!')).toBeTruthy();
   });
 });
